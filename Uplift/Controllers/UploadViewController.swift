@@ -41,12 +41,15 @@ class UploadViewController: UIViewController {
 
     
     @objc func video(_ videoPath: String, didFinishSavingWithError error: Error?, contextInfo info: AnyObject) {
+        self.tabBarController?.selectedIndex = 0
+        /*
         let title = (error == nil) ? "Success" : "Error"
-        let message = (error == nil) ? "Video was saved to camera roll and Firebase" : "Video failed to save"
+        let message = (error == nil) ? "Video was saved to Firebase" : "Video failed to save"
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil))
         present(alert, animated: true, completion: nil)
+        */
     }
 }
 
@@ -88,8 +91,15 @@ extension UploadViewController: UIImagePickerControllerDelegate {
                 print(error?.localizedDescription ?? "Error was found")
             }
         })
-/*
+
         // Handle a movie capture
+        let title = "Success"
+        let message = "Video was saved to Firebase"
+         
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+        /*
         UISaveVideoAtPathToSavedPhotosAlbum(
             url.path,
             self,
