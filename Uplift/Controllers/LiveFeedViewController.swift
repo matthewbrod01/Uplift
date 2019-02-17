@@ -25,13 +25,15 @@ class LiveFeedViewController: UIViewController, UITableViewDelegate, UITableView
         
         let dbRef = Database.database().reference(fromURL: "https://uplift-8ef8c.firebaseio.com/").child("a")
         dbRef.observe(.value) { (snapshot) in
-            for child in snapshot.children{
+            for child in snapshot.children.reversed() {
                 let snap = child as! DataSnapshot
                 let value = snap.value as! String
                 self.posts.append(value)
             }
+            self.tableView.reloadData()
         }
         tableView.reloadData()
+
     }
     
     func getThumbnailImage(forUrl url: URL) -> UIImage? {
@@ -39,7 +41,7 @@ class LiveFeedViewController: UIViewController, UITableViewDelegate, UITableView
         let imageGenerator = AVAssetImageGenerator(asset: asset)
         
         do {
-            let thumbnailImage = try imageGenerator.copyCGImage(at: CMTimeMake(value: 1, timescale: 60) , actualTime: nil)
+            let thumbnailImage = try imageGenerator.copyCGImage(at: CMTimeMake(value: 1, timescale: 30) , actualTime: nil)
             return UIImage(cgImage: thumbnailImage)
         } catch let error {
             print(error)
@@ -49,14 +51,13 @@ class LiveFeedViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
-        //let urlString = posts[indexPath.row]
-        //let url = URL(string: urlString)
-        let url = URL(string: "https://firebasestorage.googleapis.com/v0/b/uplift-8ef8c.appspot.com/o/8AA0A3A8-DF76-45E6-82BA-71A95705E8E7.mov?alt=media&token=39059fbe-790d-4310-94e5-f6c25c21c429")
+        let urlString = posts[indexPath.row]
+        let url = URL(string: urlString)
         if let thumbnailImage = getThumbnailImage(forUrl: url!) {
             cell.mediaView.image = thumbnailImage
             let radians: CGFloat = 90 * (.pi/180)
@@ -65,15 +66,16 @@ class LiveFeedViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let video = posts[indexPath.row]
+        let videoUrl = URL(string: video)
+        let player = AVPlayer(url: videoUrl!)
+        
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        
+        present(playerViewController, animated: true) {
+            player.play()
+        }
     }
-    */
-
 }

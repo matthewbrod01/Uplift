@@ -76,13 +76,14 @@ extension UploadViewController: UIImagePickerControllerDelegate {
                 print(error?.localizedDescription ?? "Error was found")
             }
         })
-
+/*
         // Handle a movie capture
         UISaveVideoAtPathToSavedPhotosAlbum(
             url.path,
             self,
             #selector(video(_:didFinishSavingWithError:contextInfo:)),
             nil)
+ */
     }
 }
 
