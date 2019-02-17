@@ -21,11 +21,11 @@ class LiveFeedViewController: UIViewController, UITableViewDelegate, UITableView
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 490
+        tableView.rowHeight = 414
         
         let dbRef = Database.database().reference(fromURL: "https://uplift-8ef8c.firebaseio.com/").child("a")
         dbRef.observe(.value) { (snapshot) in
-            for child in snapshot.children.reversed() {
+            for child in snapshot.children {
                 let snap = child as! DataSnapshot
                 let value = snap.value as! String
                 self.posts.append(value)
@@ -37,11 +37,12 @@ class LiveFeedViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func getThumbnailImage(forUrl url: URL) -> UIImage? {
+        
         let asset: AVAsset = AVAsset(url: url)
         let imageGenerator = AVAssetImageGenerator(asset: asset)
         
         do {
-            let thumbnailImage = try imageGenerator.copyCGImage(at: CMTimeMake(value: 1, timescale: 30) , actualTime: nil)
+            let thumbnailImage = try imageGenerator.copyCGImage(at: CMTimeMake(value: 0, timescale: 1) , actualTime: nil)
             return UIImage(cgImage: thumbnailImage)
         } catch let error {
             print(error)
@@ -58,11 +59,10 @@ class LiveFeedViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
         let urlString = posts[indexPath.row]
         let url = URL(string: urlString)
-        if let thumbnailImage = getThumbnailImage(forUrl: url!) {
-            cell.mediaView.image = thumbnailImage
-            let radians: CGFloat = 90 * (.pi/180)
-            cell.mediaView.transform = CGAffineTransform(rotationAngle: radians)
-        }
+        cell.mediaView.cacheImage(key: "\(indexPath).row", thumbnailImage: self.getThumbnailImage(forUrl: url!)!)
+        let radians: CGFloat = 90 * (.pi/180)
+        cell.mediaView.transform = CGAffineTransform(rotationAngle: radians)
+        
         return cell
     }
     
@@ -76,6 +76,25 @@ class LiveFeedViewController: UIViewController, UITableViewDelegate, UITableView
         
         present(playerViewController, animated: true) {
             player.play()
+        }
+    }
+}
+
+let imageCache = NSCache<AnyObject, AnyObject>()
+
+extension UIImageView {
+    func cacheImage(key: String, thumbnailImage: UIImage){
+        
+        image = nil
+        
+        if let imageFromCache = imageCache.object(forKey: key as AnyObject) as? UIImage {
+            self.image = imageFromCache
+            return
+        }
+        DispatchQueue.main.async {
+            let imageToCache = thumbnailImage
+            imageCache.setObject(imageToCache, forKey: key as AnyObject)
+            self.image = imageToCache
         }
     }
 }

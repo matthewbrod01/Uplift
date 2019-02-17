@@ -77,6 +77,7 @@
 			children = (
 				13AA6F6C22191DC200DC3306 /* Controllers */,
 				13AA6F4A2219143000DC3306 /* AppDelegate.swift */,
+				13AA6F6F221935A100DC3306 /* PostCell.swift */,
 				13AA6F4E2219143000DC3306 /* Main.storyboard */,
 				13AA6F6A22191DB200DC3306 /* VideoHelper.swift */,
 				13AA6F512219143100DC3306 /* Assets.xcassets */,
@@ -95,7 +96,6 @@
 				13AA6F6422191CB700DC3306 /* ExploreViewController.swift */,
 				13AA6F6622191CC900DC3306 /* PersonalActivityViewController.swift */,
 				13AA6F5C221914E100DC3306 /* UploadViewController.swift */,
-				13AA6F6F221935A100DC3306 /* PostCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

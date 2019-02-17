@@ -20,13 +20,25 @@ class UploadViewController: UIViewController {
         ref = Database.database().reference(fromURL: "https://uplift-8ef8c.firebaseio.com/")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        let alertController = UIAlertController(title: "Upload", message: "Would you like to use the camera?", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+            // handle cancel response here. Doing nothing will dismiss the view.
+            self.tabBarController?.selectedIndex = 4
+        }
+        alertController.addAction(cancelAction)
+        
+        let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
+            self.launchCamera()
+        }
+        alertController.addAction(OKAction)
+        present(alertController, animated: true)
+    }
+    
     func launchCamera() {
         VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
     }
-    
-    @IBAction func onTapCameraButton(_ sender: Any) {
-        launchCamera()
-    }
+
     
     @objc func video(_ videoPath: String, didFinishSavingWithError error: Error?, contextInfo info: AnyObject) {
         let title = (error == nil) ? "Success" : "Error"
