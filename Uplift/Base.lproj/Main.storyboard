@@ -17,6 +17,24 @@
                     <view key="view" contentMode="scaleToFill" id="6Gf-H7-LId">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="187" translatesAutoresizingMaskIntoConstraints="NO" id="cf2-DN-Cku">
+                                <rect key="frame" x="19" y="61" width="375" height="187"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cf2-DN-Cku" id="HzU-O8-t00">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="186.66666666666666"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="183" translatesAutoresizingMaskIntoConstraints="NO" id="B0p-0P-01O">
+                                <rect key="frame" x="19" y="277" width="375" height="183"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B0p-0P-01O" id="tWB-p5-1gB">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="182.66666666666666"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="s9T-Zx-nLu"/>
                     </view>
@@ -24,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cSE-po-ofB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="-550"/>
+            <point key="canvasLocation" x="1075.3623188405797" y="-550.27173913043487"/>
         </scene>
         <!--Upload View Controller-->
         <scene sceneID="k5C-yi-XDh">
