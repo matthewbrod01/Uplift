@@ -20,21 +20,36 @@ class UploadViewController: UIViewController {
         ref = Database.database().reference(fromURL: "https://uplift-8ef8c.firebaseio.com/")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        let alertController = UIAlertController(title: "Upload", message: "Would you like to use the camera?", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+            // handle cancel response here. Doing nothing will dismiss the view.
+            self.tabBarController?.selectedIndex = 4
+        }
+        alertController.addAction(cancelAction)
+        
+        let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
+            self.launchCamera()
+        }
+        alertController.addAction(OKAction)
+        present(alertController, animated: true)
+    }
+    
     func launchCamera() {
         VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
     }
-    
-    @IBAction func onTapCameraButton(_ sender: Any) {
-        launchCamera()
-    }
+
     
     @objc func video(_ videoPath: String, didFinishSavingWithError error: Error?, contextInfo info: AnyObject) {
+        self.tabBarController?.selectedIndex = 0
+        /*
         let title = (error == nil) ? "Success" : "Error"
-        let message = (error == nil) ? "Video was saved to camera roll and Firebase" : "Video failed to save"
+        let message = (error == nil) ? "Video was saved to Firebase" : "Video failed to save"
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil))
         present(alert, animated: true, completion: nil)
+        */
     }
 }
 
@@ -78,11 +93,19 @@ extension UploadViewController: UIImagePickerControllerDelegate {
         })
 
         // Handle a movie capture
+        let title = "Success"
+        let message = "Video was saved to Firebase"
+         
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+        /*
         UISaveVideoAtPathToSavedPhotosAlbum(
             url.path,
             self,
             #selector(video(_:didFinishSavingWithError:contextInfo:)),
             nil)
+ */
     }
 }
 
