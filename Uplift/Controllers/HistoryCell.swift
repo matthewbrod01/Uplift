@@ -14,7 +14,6 @@ class HistoryCell: UITableViewCell {
     @IBOutlet weak var comment: UILabel!
     @IBOutlet weak var date: UILabel!
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

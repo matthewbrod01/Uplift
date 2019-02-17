@@ -11,6 +11,8 @@ import UIKit
 class PersonalActivityViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    //let comm = ["Bob","Joe","Joseph"]
+    //let date = ["This", "Words", "Hello"]
     
     // NEED these for table view to work
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -18,8 +20,8 @@ class PersonalActivityViewController: UIViewController, UITableViewDataSource, U
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        //let cell = tableView .dequeueReusableCell(withIdentifier: "HistoryCell") as! HistoryCell
-        let cell = UITableViewCell()
+        let cell = tableView .dequeueReusableCell(withIdentifier: "HistoryCell") as! HistoryCell
+        //let cell = UITableViewCell()
         //let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath) as UITableViewCell
         cell.textLabel?.text = "row: \(indexPath.row)"
         return cell
@@ -29,7 +31,7 @@ class PersonalActivityViewController: UIViewController, UITableViewDataSource, U
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        print("Hello")
+        //print("Hello")
     }
 
 }
