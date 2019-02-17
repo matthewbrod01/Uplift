@@ -124,13 +124,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Esd-a4-3Uh">
                                 <rect key="frame" x="0.0" y="180" width="414" height="238"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.78290586870000001" blue="0.060724096960000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.92941176470588238" green="0.83137254901960778" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.78290586870000001" blue="0.060724096960000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" red="1" green="0.78290586870000001" blue="0.060724096960000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Helal Chowdhury" textAlignment="natural" minimumFontSize="26" translatesAutoresizingMaskIntoConstraints="NO" id="3q7-v2-afi">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Helal Chowdhury" textAlignment="natural" minimumFontSize="26" translatesAutoresizingMaskIntoConstraints="NO" id="3q7-v2-afi">
                                 <rect key="frame" x="204" y="40" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -152,7 +153,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arr-ks-cSC">
                                 <rect key="frame" x="9" y="225" width="396" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.78290586870000001" blue="0.060724096960000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.92941176470588238" green="0.83137254901960778" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <mutableString key="text">"At the age of 16, I was diagnosed with cancer. Due the number surgeries and absences, I was left behind in school for three years. Even with all the hardships I have faced along the way, five years later, my condition worsened. I was given three months to live. Ever since then, my life changed immensely. I found myself reminiscing every moment of the past, and how many things I could have accomplished, and pondering about the future and its mysteries that i'll never experience. This is my voice, this is my story." - Helal Chowdhury</mutableString>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
@@ -168,7 +169,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WaE-YX-UBp">
                                 <rect key="frame" x="0.0" y="419" width="414" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.54908363240000002" green="0.80262755320000001" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.46274509803921571" green="0.71372549019607845" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.78290586870000001" blue="0.060724096960000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileCell" rowHeight="150" id="ZnS-JG-hdM" customClass="ProfileCell" customModule="Uplift" customModuleProvider="target">
@@ -195,23 +196,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="profile-50" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8eD-T5-jGJ">
-                                <rect key="frame" x="21" y="20" width="175" height="145"/>
-                                <color key="backgroundColor" red="0.54908363240000002" green="0.80262755320000001" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="5xq-Hl-J6n"/>
-                                    <constraint firstAttribute="width" constant="156" id="XzJ-Tl-ZRG"/>
-                                    <constraint firstAttribute="height" constant="125" id="xSh-Y0-bMR"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile-50" translatesAutoresizingMaskIntoConstraints="NO" id="ql9-qw-ApS">
+                                <rect key="frame" x="20" y="40" width="156" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.54908363239295022" green="0.80262755316432655" blue="0.96620899438858032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="8eD-T5-jGJ" firstAttribute="leading" secondItem="JqU-tU-dKF" secondAttribute="leadingMargin" id="gOI-vN-CE8"/>
-                            <constraint firstItem="3q7-v2-afi" firstAttribute="leading" secondItem="8eD-T5-jGJ" secondAttribute="trailing" constant="28" id="hyh-hS-MQA"/>
-                            <constraint firstItem="8eD-T5-jGJ" firstAttribute="top" secondItem="3q7-v2-afi" secondAttribute="top" id="nEE-WD-aap"/>
-                            <constraint firstItem="8eD-T5-jGJ" firstAttribute="top" secondItem="wKz-fv-7d1" secondAttribute="top" constant="20" id="yJr-Ne-O3c"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.46274509803921571" green="0.71372549019607845" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="wKz-fv-7d1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="profile-50" id="PCU-S3-2kG"/>
