@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		13AA6F4B2219143000DC3306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA6F4A2219143000DC3306 /* AppDelegate.swift */; };
-		13AA6F4D2219143000DC3306 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA6F4C2219143000DC3306 /* ViewController.swift */; };
 		13AA6F502219143000DC3306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AA6F4E2219143000DC3306 /* Main.storyboard */; };
 		13AA6F522219143100DC3306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13AA6F512219143100DC3306 /* Assets.xcassets */; };
 		13AA6F552219143100DC3306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AA6F532219143100DC3306 /* LaunchScreen.storyboard */; };
+		13AA6F5D221914E100DC3306 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA6F5C221914E100DC3306 /* UploadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13AA6F472219143000DC3306 /* Uplift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uplift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13AA6F4A2219143000DC3306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		13AA6F4C2219143000DC3306 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13AA6F4F2219143000DC3306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13AA6F512219143100DC3306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13AA6F542219143100DC3306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13AA6F562219143100DC3306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13AA6F5C221914E100DC3306 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				13AA6F4A2219143000DC3306 /* AppDelegate.swift */,
-				13AA6F4C2219143000DC3306 /* ViewController.swift */,
 				13AA6F4E2219143000DC3306 /* Main.storyboard */,
+				13AA6F5C221914E100DC3306 /* UploadViewController.swift */,
 				13AA6F512219143100DC3306 /* Assets.xcassets */,
 				13AA6F532219143100DC3306 /* LaunchScreen.storyboard */,
 				13AA6F562219143100DC3306 /* Info.plist */,
@@ -135,8 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13AA6F4D2219143000DC3306 /* ViewController.swift in Sources */,
 				13AA6F4B2219143000DC3306 /* AppDelegate.swift in Sources */,
+				13AA6F5D221914E100DC3306 /* UploadViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +289,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.matthewrodriguez.Uplift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewRodriguez.Uplift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +307,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.matthewrodriguez.Uplift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewRodriguez.Uplift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
