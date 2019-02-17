@@ -121,113 +121,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="profile-50" translatesAutoresizingMaskIntoConstraints="NO" id="8eD-T5-jGJ">
-                                <rect key="frame" x="20" y="40" width="156" height="125"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="XzJ-Tl-ZRG"/>
-                                </constraints>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Esd-a4-3Uh">
+                                <rect key="frame" x="0.0" y="180" width="414" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.78290586870000001" blue="0.060724096960000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.78290586870000001" blue="0.060724096960000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="1" green="0.78290586870000001" blue="0.060724096960000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Helal Chowdhury" textAlignment="natural" minimumFontSize="26" translatesAutoresizingMaskIntoConstraints="NO" id="3q7-v2-afi">
                                 <rect key="frame" x="204" y="40" width="180" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bmn-oX-XJv">
-                                <rect key="frame" x="0.0" y="450" width="414" height="235"/>
-                                <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="64D-2e-0gG">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="287"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ssI-jW-qoE">
-                                            <size key="itemSize" width="142" height="238"/>
-                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        </collectionViewFlowLayout>
-                                        <tableView key="backgroundView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MTk-yw-Wmw">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="287"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <prototypes>
-                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="127" id="0j3-Z1-BE8">
-                                                    <rect key="frame" x="0.0" y="28" width="414" height="127"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0j3-Z1-BE8" id="9Ep-V5-q7u">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="126.66666666666667"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lung-cancer-cell-dividing-article.__v80030169" translatesAutoresizingMaskIntoConstraints="NO" id="wL3-NN-sAA">
-                                                                <rect key="frame" x="10" y="0.0" width="191" height="122"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            </imageView>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cancer-cell" translatesAutoresizingMaskIntoConstraints="NO" id="4tF-J4-dbU">
-                                                                <rect key="frame" x="215" y="0.0" width="189" height="122"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                            </imageView>
-                                                        </subviews>
-                                                    </tableViewCellContentView>
-                                                </tableViewCell>
-                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="134" id="6yR-Ul-Brr">
-                                                    <rect key="frame" x="0.0" y="155" width="414" height="134"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6yR-Ul-Brr" id="vhk-20-DUq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="133.66666666666666"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p1_StopCancer_ML1702_ts467334264" translatesAutoresizingMaskIntoConstraints="NO" id="U8a-xe-PWv">
-                                                                <rect key="frame" x="10" y="5" width="192" height="120"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            </imageView>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="_103255431_gettyimages-888730408" translatesAutoresizingMaskIntoConstraints="NO" id="iyC-cN-CHU">
-                                                                <rect key="frame" x="215" y="5" width="191" height="120"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            </imageView>
-                                                        </subviews>
-                                                    </tableViewCellContentView>
-                                                </tableViewCell>
-                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="127" id="01B-yB-UD9">
-                                                    <rect key="frame" x="0.0" y="289" width="414" height="127"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="01B-yB-UD9" id="212-Cl-Z3Q">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="126.66666666666667"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lung-cancer-cell-dividing-article.__v80030169" translatesAutoresizingMaskIntoConstraints="NO" id="bKc-Qd-7Lm">
-                                                                <rect key="frame" x="10" y="0.0" width="191" height="122"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            </imageView>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cancer-cell" translatesAutoresizingMaskIntoConstraints="NO" id="Sli-xM-zhS">
-                                                                <rect key="frame" x="215" y="0.0" width="189" height="122"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                            </imageView>
-                                                        </subviews>
-                                                    </tableViewCellContentView>
-                                                </tableViewCell>
-                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="E4y-J2-FRf">
-                                                    <rect key="frame" x="0.0" y="416" width="414" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E4y-J2-FRf" id="4FT-Ls-hl3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                    </tableViewCellContentView>
-                                                </tableViewCell>
-                                            </prototypes>
-                                        </tableView>
-                                        <cells/>
-                                    </collectionView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="64D-2e-0gG" firstAttribute="top" secondItem="Bmn-oX-XJv" secondAttribute="top" id="0cf-c3-LWz"/>
-                                    <constraint firstItem="64D-2e-0gG" firstAttribute="centerY" secondItem="Bmn-oX-XJv" secondAttribute="centerY" id="Eef-aW-QF6"/>
-                                    <constraint firstItem="64D-2e-0gG" firstAttribute="leading" secondItem="Bmn-oX-XJv" secondAttribute="leading" id="JNH-ZJ-ESt"/>
-                                    <constraint firstAttribute="trailing" secondItem="64D-2e-0gG" secondAttribute="trailing" id="XFk-b2-L93"/>
-                                    <constraint firstItem="64D-2e-0gG" firstAttribute="centerX" secondItem="Bmn-oX-XJv" secondAttribute="centerX" id="mus-yK-oVD"/>
-                                    <constraint firstAttribute="bottom" secondItem="64D-2e-0gG" secondAttribute="bottom" id="yGc-nQ-McE"/>
-                                </constraints>
-                            </scrollView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Posts: 6" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Snp-qz-gA1">
                                 <rect key="frame" x="246" y="78" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -242,66 +149,75 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ukV-8d-hpC">
-                                <rect key="frame" x="0.0" y="173" width="414" height="277"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arr-ks-cSC">
+                                <rect key="frame" x="9" y="225" width="396" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.78290586870000001" blue="0.060724096960000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <mutableString key="text">"At the age of 16, I was diagnosed with cancer. Due the number surgeries and absences, I was left behind in school for three years. Even with all the hardships I have faced along the way, five years later, my condition worsened. I was given three months to live. Ever since then, my life changed immensely. I found myself reminiscing every moment of the past, and how many things I could have accomplished, and pondering about the future and its mysteries that i'll never experience. This is my voice, this is my story." - Helal Chowdhury</mutableString>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" smartQuotesType="no"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My Story" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g8b-ic-p4f">
+                                <rect key="frame" x="134" y="180" width="147" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WaE-YX-UBp">
+                                <rect key="frame" x="0.0" y="419" width="414" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.54908363240000002" green="0.80262755320000001" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="0.78290586870000001" blue="0.060724096960000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="V4R-Fp-8wI">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileCell" rowHeight="150" id="ZnS-JG-hdM" customClass="ProfileCell" customModule="Uplift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V4R-Fp-8wI" id="wJJ-1i-Ifa">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZnS-JG-hdM" id="25B-1m-clB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="149.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My Story" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g8b-ic-p4f">
-                                                    <rect key="frame" x="134" y="-1" width="147" height="44"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3of-bz-rd4">
+                                                    <rect key="frame" x="208" y="0.0" width="199" height="139"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                            <color key="backgroundColor" red="1" green="0.86469539380000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="207" id="j1f-Io-9JE">
-                                        <rect key="frame" x="0.0" y="72" width="414" height="207"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j1f-Io-9JE" id="Fbq-Wh-Knv">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="206.66666666666666"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Arr-ks-cSC">
-                                                    <rect key="frame" x="8" y="10" width="396" height="186"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v3u-Jb-ytc">
+                                                    <rect key="frame" x="7" y="0.0" width="193" height="139"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <mutableString key="text">"At the age of 16, I was diagnosed with cancer. Due the number surgeries and absences, I was left behind in school for three years. Even with all the hardships I have faced along the way, five years later, my condition worsened. I was given three months to live. Ever since then, my life changed immensely. I found myself reminiscing every moment of the past, and how many things I could have accomplished, and pondering about the future and its mysteries that i'll never experience. This is my voice, this is my story." - Helal Chowdhury</mutableString>
-                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" smartQuotesType="no"/>
-                                                </textView>
+                                                </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" red="1" green="0.86469539380000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="0.86469539380000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <outlet property="image1" destination="v3u-Jb-ytc" id="Bu2-La-EeR"/>
+                                            <outlet property="image2" destination="3of-bz-rd4" id="agJ-EE-60N"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="profile-50" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8eD-T5-jGJ">
+                                <rect key="frame" x="21" y="20" width="175" height="145"/>
+                                <color key="backgroundColor" red="0.54908363240000002" green="0.80262755320000001" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="5xq-Hl-J6n"/>
+                                    <constraint firstAttribute="width" constant="156" id="XzJ-Tl-ZRG"/>
+                                    <constraint firstAttribute="height" constant="125" id="xSh-Y0-bMR"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.54908363239295022" green="0.80262755316432655" blue="0.96620899438858032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="wKz-fv-7d1" firstAttribute="bottom" secondItem="Bmn-oX-XJv" secondAttribute="bottom" constant="2" id="8X1-Mf-udO"/>
-                            <constraint firstItem="Bmn-oX-XJv" firstAttribute="leading" secondItem="JqU-tU-dKF" secondAttribute="leading" id="EtB-1x-J3K"/>
-                            <constraint firstItem="Bmn-oX-XJv" firstAttribute="top" secondItem="JqU-tU-dKF" secondAttribute="top" constant="450" id="Ibj-Qu-Opl"/>
                             <constraint firstItem="8eD-T5-jGJ" firstAttribute="leading" secondItem="JqU-tU-dKF" secondAttribute="leadingMargin" id="gOI-vN-CE8"/>
                             <constraint firstItem="3q7-v2-afi" firstAttribute="leading" secondItem="8eD-T5-jGJ" secondAttribute="trailing" constant="28" id="hyh-hS-MQA"/>
-                            <constraint firstAttribute="trailing" secondItem="Bmn-oX-XJv" secondAttribute="trailing" id="kRQ-If-boP"/>
                             <constraint firstItem="8eD-T5-jGJ" firstAttribute="top" secondItem="3q7-v2-afi" secondAttribute="top" id="nEE-WD-aap"/>
                             <constraint firstItem="8eD-T5-jGJ" firstAttribute="top" secondItem="wKz-fv-7d1" secondAttribute="top" constant="20" id="yJr-Ne-O3c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wKz-fv-7d1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="profile-50" id="PCU-S3-2kG"/>
+                    <connections>
+                        <outlet property="tableView" destination="WaE-YX-UBp" id="xqk-F1-6wQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RCM-Dc-a6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -331,12 +247,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="_103255431_gettyimages-888730408" width="660" height="371"/>
-        <image name="cancer-cell" width="1100" height="618"/>
         <image name="explore-50" width="50" height="50"/>
         <image name="live-feed-50" width="50" height="50"/>
-        <image name="lung-cancer-cell-dividing-article.__v80030169" width="600" height="340"/>
-        <image name="p1_StopCancer_ML1702_ts467334264" width="600" height="454"/>
         <image name="personal-activity-50" width="50" height="50"/>
         <image name="placeholder_image" width="800" height="600"/>
         <image name="profile-50" width="50" height="50"/>
