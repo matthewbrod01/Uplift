@@ -34,7 +34,6 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 - [Firebase Newsfeed](https://www.youtube.com/watch?v=Aw5Hb_A_eFI&t=625s)
 
 ## Team
-Team Members:
 - Matthew Rodriguez, Baruch College (Back-end)
 - Helal Chowdhury, NYU (AI + Front-end) **First iOS!**
 - Kevin Chen, NYU (Front-end) **First iOS!**
