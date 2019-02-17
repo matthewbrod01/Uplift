@@ -3,7 +3,7 @@
 **Objective** An iOS app which builds communities around the elderly, terminally ill, and war zone civilians by sharing stories to encourage, inspire and uplift others.
 
 ## Video Walkthrough
-> ![Walkthrough](DemoHack.gif)
+> ![](mySite.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
