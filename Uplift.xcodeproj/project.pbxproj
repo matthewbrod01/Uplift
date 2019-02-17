@@ -22,6 +22,7 @@
 		1BDAF54F2219AB2E00FF1FAD /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDAF54E2219AB2E00FF1FAD /* ProfileCell.swift */; };
 		7A400BA3394A926CED8E6B72 /* Pods_Uplift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4EB157A72B731732A49BE3 /* Pods_Uplift.framework */; };
 		8D5078182219834800372567 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5078172219834800372567 /* ExploreCell.swift */; };
+		AA1634982219CAEF0088C11D /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1634972219CAEF0088C11D /* PostCell.swift */; };
 		FBA8F4332219569D00EFF326 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA8F4322219569D00EFF326 /* HistoryCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		1BDAF54E2219AB2E00FF1FAD /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		483CBBA7C5C862E205D6BC91 /* Pods-Uplift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uplift.debug.xcconfig"; path = "Target Support Files/Pods-Uplift/Pods-Uplift.debug.xcconfig"; sourceTree = "<group>"; };
 		8D5078172219834800372567 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
+		AA1634972219CAEF0088C11D /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		B71B42A4B2B878E33379C458 /* Pods-Uplift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uplift.release.xcconfig"; path = "Target Support Files/Pods-Uplift/Pods-Uplift.release.xcconfig"; sourceTree = "<group>"; };
 		FBA8F4322219569D00EFF326 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		FC4EB157A72B731732A49BE3 /* Pods_Uplift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uplift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 				FBA8F4322219569D00EFF326 /* HistoryCell.swift */,
 				1BDAF54E2219AB2E00FF1FAD /* ProfileCell.swift */,
 				136212592219CB44008CAB2C /* PostCell.swift */,
+				AA1634972219CAEF0088C11D /* PostCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				13AA6F6322191CB100DC3306 /* ProfileViewController.swift in Sources */,
 				1BDAF54F2219AB2E00FF1FAD /* ProfileCell.swift in Sources */,
 				1362125A2219CB44008CAB2C /* PostCell.swift in Sources */,
+				AA1634982219CAEF0088C11D /* PostCell.swift in Sources */,
 				13AA6F6122191CAB00DC3306 /* LiveFeedViewController.swift in Sources */,
 				8D5078182219834800372567 /* ExploreCell.swift in Sources */,
 			);
@@ -412,6 +416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MHN4EA38T2;
+				DEVELOPMENT_TEAM = VAM3A58Y83;
 				INFOPLIST_FILE = Uplift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -431,6 +436,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MHN4EA38T2;
+				DEVELOPMENT_TEAM = VAM3A58Y83;
 				INFOPLIST_FILE = Uplift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
