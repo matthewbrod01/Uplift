@@ -12,6 +12,8 @@
 		13AA6F522219143100DC3306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13AA6F512219143100DC3306 /* Assets.xcassets */; };
 		13AA6F552219143100DC3306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AA6F532219143100DC3306 /* LaunchScreen.storyboard */; };
 		13AA6F5D221914E100DC3306 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA6F5C221914E100DC3306 /* UploadViewController.swift */; };
+		13AA6F5F2219163D00DC3306 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13AA6F5E2219163D00DC3306 /* GoogleService-Info.plist */; };
+		7A400BA3394A926CED8E6B72 /* Pods_Uplift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4EB157A72B731732A49BE3 /* Pods_Uplift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		13AA6F542219143100DC3306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13AA6F562219143100DC3306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13AA6F5C221914E100DC3306 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		13AA6F5E2219163D00DC3306 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		483CBBA7C5C862E205D6BC91 /* Pods-Uplift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uplift.debug.xcconfig"; path = "Target Support Files/Pods-Uplift/Pods-Uplift.debug.xcconfig"; sourceTree = "<group>"; };
+		B71B42A4B2B878E33379C458 /* Pods-Uplift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uplift.release.xcconfig"; path = "Target Support Files/Pods-Uplift/Pods-Uplift.release.xcconfig"; sourceTree = "<group>"; };
+		FC4EB157A72B731732A49BE3 /* Pods_Uplift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uplift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A400BA3394A926CED8E6B72 /* Pods_Uplift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				13AA6F492219143000DC3306 /* Uplift */,
 				13AA6F482219143000DC3306 /* Products */,
+				308319BD1FD5652B575493B0 /* Pods */,
+				6A42CE16F4BF68C354B3DD8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				13AA6F512219143100DC3306 /* Assets.xcassets */,
 				13AA6F532219143100DC3306 /* LaunchScreen.storyboard */,
 				13AA6F562219143100DC3306 /* Info.plist */,
+				13AA6F5E2219163D00DC3306 /* GoogleService-Info.plist */,
 			);
 			path = Uplift;
+			sourceTree = "<group>";
+		};
+		308319BD1FD5652B575493B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				483CBBA7C5C862E205D6BC91 /* Pods-Uplift.debug.xcconfig */,
+				B71B42A4B2B878E33379C458 /* Pods-Uplift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6A42CE16F4BF68C354B3DD8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC4EB157A72B731732A49BE3 /* Pods_Uplift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13AA6F592219143100DC3306 /* Build configuration list for PBXNativeTarget "Uplift" */;
 			buildPhases = (
+				91830D60DCE74034D40E6507 /* [CP] Check Pods Manifest.lock */,
 				13AA6F432219143000DC3306 /* Sources */,
 				13AA6F442219143000DC3306 /* Frameworks */,
 				13AA6F452219143000DC3306 /* Resources */,
+				560B29EBA6C0587970616018 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,66 @@
 			buildActionMask = 2147483647;
 			files = (
 				13AA6F552219143100DC3306 /* LaunchScreen.storyboard in Resources */,
+				13AA6F5F2219163D00DC3306 /* GoogleService-Info.plist in Resources */,
 				13AA6F522219143100DC3306 /* Assets.xcassets in Resources */,
 				13AA6F502219143000DC3306 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		560B29EBA6C0587970616018 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Uplift/Pods-Uplift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Uplift/Pods-Uplift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91830D60DCE74034D40E6507 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Uplift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13AA6F432219143000DC3306 /* Sources */ = {
@@ -280,6 +363,7 @@
 		};
 		13AA6F5A2219143100DC3306 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 483CBBA7C5C862E205D6BC91 /* Pods-Uplift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +382,7 @@
 		};
 		13AA6F5B2219143100DC3306 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B71B42A4B2B878E33379C458 /* Pods-Uplift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
