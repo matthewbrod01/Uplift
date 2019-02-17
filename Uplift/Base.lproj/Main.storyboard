@@ -132,30 +132,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lZO-Fo-XRJ">
-                                <rect key="frame" x="0.0" y="181" width="414" height="269"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lZO-Fo-XRJ">
+                                <rect key="frame" x="10" y="242" width="374" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="244" id="fUY-08-y59">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="244"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fUY-08-y59" id="j09-4z-7U3">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="243.66666666666666"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My Story" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gfB-9T-gTc">
-                                                    <rect key="frame" x="150" y="0.0" width="114" height="33"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                            <color key="backgroundColor" red="1" green="0.86469539384394922" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" id="LCI-NX-efO">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="270"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <mutableString key="text">"At the age of 16, I was diagnosed with cancer. Due the number surgeries and absences, I was left behind in school for three years. Even with all the hardships I have faced along the way, five years later, my condition worsened. I was given three months to live. Ever since then, my life changed immensely. I found myself reminiscing every moment of the past, and how many things I could have accomplished, and pondering about the future and its mysteries that i'll never experience. This is my voice, this is my story." - Helal Chowdhury</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
                             </tableView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bmn-oX-XJv">
                                 <rect key="frame" x="0.0" y="450" width="414" height="235"/>
@@ -173,58 +162,58 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottomLeft" id="5Dd-Jn-D2z">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="238"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="182"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="238"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="182"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </view>
-                                                <size key="customSize" width="130" height="238"/>
+                                                <size key="customSize" width="135" height="182"/>
                                             </collectionViewCell>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9zd-X4-teb">
-                                                <rect key="frame" x="140.66666666666666" y="0.0" width="131" height="238"/>
+                                                <rect key="frame" x="145" y="1.6666666666666667" width="127" height="179"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="131" height="238"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="127" height="179"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </view>
-                                                <size key="customSize" width="131" height="238"/>
+                                                <size key="customSize" width="127" height="179"/>
                                             </collectionViewCell>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottomRight" id="XIs-ZQ-yWM">
-                                                <rect key="frame" x="282" y="0.0" width="132" height="238"/>
+                                                <rect key="frame" x="282" y="0.0" width="132" height="182"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="132" height="238"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="132" height="182"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </view>
-                                                <size key="customSize" width="132" height="238"/>
+                                                <size key="customSize" width="132" height="182"/>
                                             </collectionViewCell>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottomLeft" id="eYa-1l-m2E">
-                                                <rect key="frame" x="0.0" y="248" width="130" height="238"/>
+                                                <rect key="frame" x="0.0" y="192.66666666666666" width="133" height="203"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="238"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="133" height="203"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </view>
-                                                <size key="customSize" width="130" height="238"/>
+                                                <size key="customSize" width="133" height="203"/>
                                             </collectionViewCell>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottomLeft" id="Uly-O6-GnB">
-                                                <rect key="frame" x="140" y="248" width="130" height="238"/>
+                                                <rect key="frame" x="143" y="192" width="130" height="204"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="238"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="204"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </view>
-                                                <size key="customSize" width="130" height="238"/>
+                                                <size key="customSize" width="130" height="204"/>
                                             </collectionViewCell>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottomLeft" id="aKO-jI-zTk">
-                                                <rect key="frame" x="280" y="248" width="130" height="238"/>
+                                                <rect key="frame" x="283" y="192" width="130" height="204"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="238"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="204"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </view>
-                                                <size key="customSize" width="130" height="238"/>
+                                                <size key="customSize" width="130" height="204"/>
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
@@ -242,6 +231,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My Story" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wrN-4v-Nm9">
+                                <rect key="frame" x="149" y="194" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
