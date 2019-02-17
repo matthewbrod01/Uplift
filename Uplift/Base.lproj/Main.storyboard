@@ -136,8 +136,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bmn-oX-XJv">
                                 <rect key="frame" x="0.0" y="450" width="414" height="235"/>
                                 <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="64D-2e-0gG">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="235"/>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="64D-2e-0gG">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="287"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ssI-jW-qoE">
                                             <size key="itemSize" width="142" height="238"/>
@@ -145,6 +145,32 @@
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
+                                        <tableView key="backgroundView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MTk-yw-Wmw">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="287"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <prototypes>
+                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="127" id="0j3-Z1-BE8">
+                                                    <rect key="frame" x="0.0" y="28" width="414" height="127"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0j3-Z1-BE8" id="9Ep-V5-q7u">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="126.66666666666667"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lung-cancer-cell-dividing-article.__v80030169" translatesAutoresizingMaskIntoConstraints="NO" id="wL3-NN-sAA">
+                                                                <rect key="frame" x="10" y="0.0" width="191" height="122"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cancer-cell" translatesAutoresizingMaskIntoConstraints="NO" id="4tF-J4-dbU">
+                                                                <rect key="frame" x="215" y="0.0" width="189" height="122"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </tableViewCellContentView>
+                                                </tableViewCell>
+                                            </prototypes>
+                                        </tableView>
                                         <cells/>
                                     </collectionView>
                                 </subviews>
@@ -197,7 +223,7 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <mutableString key="text">"At the age of 16, I was diagnosed with cancer. Due the number surgeries and absences, I was left behind in school for three years. Even with all the hardships I have faced along the way, five years later, my condition worsened. I was given three months to live. Ever since then, my life changed immensely. I found myself reminiscing every moment of the past, and how many things I could have accomplished, and pondering about the future and its mysteries that i'll never experience. This is my voice, this is my story." - Helal Chowdhury</mutableString>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" smartQuotesType="no"/>
                                                 </textView>
                                             </subviews>
                                             <color key="backgroundColor" red="1" green="0.86469539380000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -250,8 +276,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cancer-cell" width="1100" height="618"/>
         <image name="explore-50" width="50" height="50"/>
         <image name="live-feed-50" width="50" height="50"/>
+        <image name="lung-cancer-cell-dividing-article.__v80030169" width="600" height="340"/>
         <image name="personal-activity-50" width="50" height="50"/>
         <image name="placeholder_image" width="800" height="600"/>
         <image name="profile-50" width="50" height="50"/>
