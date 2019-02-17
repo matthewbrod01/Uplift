@@ -14,7 +14,10 @@ class ExploreViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var searchBar: UISearchBar!
     
     
-    let data = ["James", "Mary", "John", "Patricia", "Robert", "Jennifer", "Michael", "Linda", "William", "Elizabeth", "David", "Barbara", "Richard", "Susan", "Joseph", "Jessica", "Thomas", "Sarah", "Charle", "Margaret", "Chris", "Karen", "Daniel", "Nancy", "Matthew", "Lisa", "Anthony", "Betty", "Stephen", "Dorothy", "Mark", "Sandra", "Paul", "Ashley", "Steven", "Kimberly", "Andrew", "Donna", "Kenneth", "Emily", "George", "Carol", "Joshua", "Michelle"]
+    let data = ["James", "Mary", "John", "Patricia", "Robert", "Jennifer"]
+    let des = ["For the past few years, I found out that there was so much that I am able to do. Now I feel like I barely have time for much, but I am here to let you know that you should not waste your time and use it wisely", "For the past few years, I found out that there was so much that I am able to do. Now I feel like I barely have time for much, but I am here to let you know that you should not waste your time and use it wisely","For the past few years, I found out that there was so much that I am able to do. Now I feel like I barely have time for much, but I am here to let you know that you should not waste your time and use it wisely","For the past few years, I found out that there was so much that I am able to do. Now I feel like I barely have time for much, but I am here to let you know that you should not waste your time and use it wisely","For the past few years, I found out that there was so much that I am able to do. Now I feel like I barely have time for much, but I am here to let you know that you should not waste your time and use it wisely","For the past few years, I found out that there was so much that I am able to do. Now I feel like I barely have time for much, but I am here to let you know that you should not waste your time and use it wisely"]
+    let pics = ["James", "Mary", "John", "Patricia", "Robert", "Jennifer"]
+    
     var filteredData: [String]!
     
     override func viewDidLoad() {
@@ -34,7 +37,8 @@ class ExploreViewController: UIViewController, UITableViewDataSource, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExploreCell", for: indexPath) as! ExploreCell
 
         cell.nameLabel.text = data[indexPath.row]
-        
+        cell.descriptionLabel.text = des[indexPath.row]
+        cell.pictureView.image = UIImage(named: pics[indexPath.row])
         return cell
         
     }
