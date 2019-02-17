@@ -11,19 +11,20 @@ import UIKit
 class PersonalActivityViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
-    //let comm = ["Bob","Joe","Joseph"]
-    //let date = ["This", "Words", "Hello"]
+    let comm = ["Bob","Joe","Joseph"]
+    let date = ["This", "Words", "Hello"]
     
     // NEED these for table view to work
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50 // number of personal posts
+        return comm.count // number of personal posts
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView .dequeueReusableCell(withIdentifier: "HistoryCell") as! HistoryCell
         //let cell = UITableViewCell()
         //let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath) as UITableViewCell
-        cell.textLabel?.text = "row: \(indexPath.row)"
+        cell.name.text = comm[indexPath.row]
+        cell.date.text = date[indexPath.row]
         return cell
     }
 
