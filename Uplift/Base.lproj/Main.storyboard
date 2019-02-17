@@ -10,81 +10,81 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--test-->
+        <!--Explore View Controller-->
         <scene sceneID="VIv-LS-Cvk">
             <objects>
-                <viewController id="2QV-DU-7Ca" sceneMemberID="viewController">
+                <viewController id="2QV-DU-7Ca" customClass="ExploreViewController" customModule="Uplift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Gf-H7-LId">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="s9T-Zx-nLu"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="test" id="z99-sl-QiP"/>
+                    <tabBarItem key="tabBarItem" title="" image="explore-50" id="z99-sl-QiP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cSE-po-ofB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="-550"/>
         </scene>
-        <!--0-->
+        <!--Upload View Controller-->
         <scene sceneID="k5C-yi-XDh">
             <objects>
-                <viewController id="JNw-qW-mcc" sceneMemberID="viewController">
+                <viewController id="JNw-qW-mcc" customClass="UploadViewController" customModule="Uplift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jCM-Aa-3eQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="MpB-ba-9PH"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="0" id="kmY-fl-B3m"/>
+                    <tabBarItem key="tabBarItem" title="" image="upload-50" id="kmY-fl-B3m"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZv-SH-Vc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1068" y="134"/>
         </scene>
-        <!--home-->
+        <!--Live Feed View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="UploadViewController" customModule="Uplift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LiveFeedViewController" customModule="Uplift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="home" id="Knj-Tk-60M"/>
+                    <tabBarItem key="tabBarItem" title="" image="live-feed-50" id="Knj-Tk-60M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="-1228"/>
         </scene>
-        <!--bc-->
+        <!--Personal Activity View Controller-->
         <scene sceneID="uXL-gR-42c">
             <objects>
-                <viewController id="p0z-LE-QfC" sceneMemberID="viewController">
+                <viewController id="p0z-LE-QfC" customClass="PersonalActivityViewController" customModule="Uplift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RZz-Oz-2eB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nxv-TB-yQk"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="bc" id="QEq-z2-OLs"/>
+                    <tabBarItem key="tabBarItem" title="" image="personal-activity-50" id="QEq-z2-OLs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uye-7L-tdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="842"/>
         </scene>
-        <!--a-->
+        <!--Profile View Controller-->
         <scene sceneID="Qcg-5b-K93">
             <objects>
-                <viewController id="Z70-UT-PUJ" sceneMemberID="viewController">
+                <viewController id="Z70-UT-PUJ" customClass="ProfileViewController" customModule="Uplift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JqU-tU-dKF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wKz-fv-7d1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="a" id="PCU-S3-2kG"/>
+                    <tabBarItem key="tabBarItem" title="" image="profile-50" id="PCU-S3-2kG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RCM-Dc-a6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,4 +113,11 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="explore-50" width="37.5" height="37.5"/>
+        <image name="live-feed-50" width="37.5" height="37.5"/>
+        <image name="personal-activity-50" width="37.5" height="37.5"/>
+        <image name="profile-50" width="37.5" height="37.5"/>
+        <image name="upload-50" width="37.5" height="37.5"/>
+    </resources>
 </document>
