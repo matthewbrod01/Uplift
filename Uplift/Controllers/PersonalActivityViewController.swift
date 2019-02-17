@@ -18,6 +18,12 @@ class PersonalActivityViewController: UIViewController, UITableViewDataSource, U
                 "\"Think Big And Don’t Listen To People Who Tell You It Can’t Be Done. Life’s Too Short To Think Small\"",
                 "\"Success Is Getting What You Want, Happiness Is Wanting What You Get\""]
     let date = ["-February 12", "-February 13","-February 14","-February 15","-February 16","-February 17"]
+    let images = ["20180922_FNP502.jpg",
+                  "0773713158fe69db3381f595811d0ec7.jpg",
+                  "12201710123533177902975.jpg",
+                  "firstworld.jpg",
+                  "getty_840246746_2000145920009280151_291261.jpg",
+                  "l_lakes-1500559741.jpg"]
     
     // NEED these for table view to work
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -30,6 +36,7 @@ class PersonalActivityViewController: UIViewController, UITableViewDataSource, U
         //let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath) as UITableViewCell
         cell.name.text = comm[indexPath.row]
         cell.date.text = date[indexPath.row]
+        cell.profile.image = UIImage(named: images[indexPath.row])
         return cell
     }
 

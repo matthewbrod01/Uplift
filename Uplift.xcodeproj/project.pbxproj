@@ -20,6 +20,12 @@
 		13AA6F6B22191DB200DC3306 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA6F6A22191DB200DC3306 /* VideoHelper.swift */; };
 		13AA6F70221935A100DC3306 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA6F6F221935A100DC3306 /* PostCell.swift */; };
 		7A400BA3394A926CED8E6B72 /* Pods_Uplift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4EB157A72B731732A49BE3 /* Pods_Uplift.framework */; };
+		FB55476A2219A2E3007064C3 /* 20180922_FNP502.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB5547642219A2E3007064C3 /* 20180922_FNP502.jpg */; };
+		FB55476B2219A2E3007064C3 /* firstworld.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB5547652219A2E3007064C3 /* firstworld.jpg */; };
+		FB55476C2219A2E3007064C3 /* 12201710123533177902975.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB5547662219A2E3007064C3 /* 12201710123533177902975.jpg */; };
+		FB55476D2219A2E3007064C3 /* l_lakes-1500559741.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB5547672219A2E3007064C3 /* l_lakes-1500559741.jpg */; };
+		FB55476E2219A2E3007064C3 /* 0773713158fe69db3381f595811d0ec7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB5547682219A2E3007064C3 /* 0773713158fe69db3381f595811d0ec7.jpg */; };
+		FB55476F2219A2E3007064C3 /* getty_840246746_2000145920009280151_291261.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB5547692219A2E3007064C3 /* getty_840246746_2000145920009280151_291261.jpg */; };
 		FBA8F4312219564400EFF326 /* lilliya-scarlett-instagram-1528814125-custom-0.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8F4302219564300EFF326 /* lilliya-scarlett-instagram-1528814125-custom-0.png */; };
 		FBA8F4332219569D00EFF326 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA8F4322219569D00EFF326 /* HistoryCell.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +47,12 @@
 		13AA6F6F221935A100DC3306 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		483CBBA7C5C862E205D6BC91 /* Pods-Uplift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uplift.debug.xcconfig"; path = "Target Support Files/Pods-Uplift/Pods-Uplift.debug.xcconfig"; sourceTree = "<group>"; };
 		B71B42A4B2B878E33379C458 /* Pods-Uplift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uplift.release.xcconfig"; path = "Target Support Files/Pods-Uplift/Pods-Uplift.release.xcconfig"; sourceTree = "<group>"; };
+		FB5547642219A2E3007064C3 /* 20180922_FNP502.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20180922_FNP502.jpg; sourceTree = "<group>"; };
+		FB5547652219A2E3007064C3 /* firstworld.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firstworld.jpg; sourceTree = "<group>"; };
+		FB5547662219A2E3007064C3 /* 12201710123533177902975.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12201710123533177902975.jpg; sourceTree = "<group>"; };
+		FB5547672219A2E3007064C3 /* l_lakes-1500559741.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "l_lakes-1500559741.jpg"; sourceTree = "<group>"; };
+		FB5547682219A2E3007064C3 /* 0773713158fe69db3381f595811d0ec7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0773713158fe69db3381f595811d0ec7.jpg; sourceTree = "<group>"; };
+		FB5547692219A2E3007064C3 /* getty_840246746_2000145920009280151_291261.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = getty_840246746_2000145920009280151_291261.jpg; sourceTree = "<group>"; };
 		FBA8F4302219564300EFF326 /* lilliya-scarlett-instagram-1528814125-custom-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lilliya-scarlett-instagram-1528814125-custom-0.png"; sourceTree = "<group>"; };
 		FBA8F4322219569D00EFF326 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		FC4EB157A72B731732A49BE3 /* Pods_Uplift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uplift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +114,7 @@
 				13AA6F5C221914E100DC3306 /* UploadViewController.swift */,
 				13AA6F6F221935A100DC3306 /* PostCell.swift */,
 				FBA8F4322219569D00EFF326 /* HistoryCell.swift */,
+				FB5547632219A2E3007064C3 /* world_issues */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -121,6 +134,19 @@
 				FC4EB157A72B731732A49BE3 /* Pods_Uplift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB5547632219A2E3007064C3 /* world_issues */ = {
+			isa = PBXGroup;
+			children = (
+				FB5547642219A2E3007064C3 /* 20180922_FNP502.jpg */,
+				FB5547652219A2E3007064C3 /* firstworld.jpg */,
+				FB5547662219A2E3007064C3 /* 12201710123533177902975.jpg */,
+				FB5547672219A2E3007064C3 /* l_lakes-1500559741.jpg */,
+				FB5547682219A2E3007064C3 /* 0773713158fe69db3381f595811d0ec7.jpg */,
+				FB5547692219A2E3007064C3 /* getty_840246746_2000145920009280151_291261.jpg */,
+			);
+			path = world_issues;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,10 +209,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB55476C2219A2E3007064C3 /* 12201710123533177902975.jpg in Resources */,
+				FB55476A2219A2E3007064C3 /* 20180922_FNP502.jpg in Resources */,
+				FB55476E2219A2E3007064C3 /* 0773713158fe69db3381f595811d0ec7.jpg in Resources */,
 				13AA6F552219143100DC3306 /* LaunchScreen.storyboard in Resources */,
+				FB55476F2219A2E3007064C3 /* getty_840246746_2000145920009280151_291261.jpg in Resources */,
+				FB55476D2219A2E3007064C3 /* l_lakes-1500559741.jpg in Resources */,
 				13AA6F5F2219163D00DC3306 /* GoogleService-Info.plist in Resources */,
 				13AA6F522219143100DC3306 /* Assets.xcassets in Resources */,
 				FBA8F4312219564400EFF326 /* lilliya-scarlett-instagram-1528814125-custom-0.png in Resources */,
+				FB55476B2219A2E3007064C3 /* firstworld.jpg in Resources */,
 				13AA6F502219143000DC3306 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
