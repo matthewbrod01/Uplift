@@ -169,6 +169,51 @@
                                                         </subviews>
                                                     </tableViewCellContentView>
                                                 </tableViewCell>
+                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="134" id="6yR-Ul-Brr">
+                                                    <rect key="frame" x="0.0" y="155" width="414" height="134"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6yR-Ul-Brr" id="vhk-20-DUq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="133.66666666666666"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p1_StopCancer_ML1702_ts467334264" translatesAutoresizingMaskIntoConstraints="NO" id="U8a-xe-PWv">
+                                                                <rect key="frame" x="10" y="5" width="192" height="120"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="_103255431_gettyimages-888730408" translatesAutoresizingMaskIntoConstraints="NO" id="iyC-cN-CHU">
+                                                                <rect key="frame" x="215" y="5" width="191" height="120"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </tableViewCellContentView>
+                                                </tableViewCell>
+                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="127" id="01B-yB-UD9">
+                                                    <rect key="frame" x="0.0" y="289" width="414" height="127"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="01B-yB-UD9" id="212-Cl-Z3Q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="126.66666666666667"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lung-cancer-cell-dividing-article.__v80030169" translatesAutoresizingMaskIntoConstraints="NO" id="bKc-Qd-7Lm">
+                                                                <rect key="frame" x="10" y="0.0" width="191" height="122"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cancer-cell" translatesAutoresizingMaskIntoConstraints="NO" id="Sli-xM-zhS">
+                                                                <rect key="frame" x="215" y="0.0" width="189" height="122"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </tableViewCellContentView>
+                                                </tableViewCell>
+                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="E4y-J2-FRf">
+                                                    <rect key="frame" x="0.0" y="416" width="414" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E4y-J2-FRf" id="4FT-Ls-hl3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </tableViewCellContentView>
+                                                </tableViewCell>
                                             </prototypes>
                                         </tableView>
                                         <cells/>
@@ -208,6 +253,16 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V4R-Fp-8wI" id="wJJ-1i-Ifa">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My Story" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g8b-ic-p4f">
+                                                    <rect key="frame" x="134" y="-1" width="147" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.86469539380000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="207" id="j1f-Io-9JE">
@@ -222,7 +277,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <mutableString key="text">"At the age of 16, I was diagnosed with cancer. Due the number surgeries and absences, I was left behind in school for three years. Even with all the hardships I have faced along the way, five years later, my condition worsened. I was given three months to live. Ever since then, my life changed immensely. I found myself reminiscing every moment of the past, and how many things I could have accomplished, and pondering about the future and its mysteries that i'll never experience. This is my voice, this is my story." - Helal Chowdhury</mutableString>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" smartQuotesType="no"/>
                                                 </textView>
                                             </subviews>
@@ -276,10 +331,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="_103255431_gettyimages-888730408" width="660" height="371"/>
         <image name="cancer-cell" width="1100" height="618"/>
         <image name="explore-50" width="50" height="50"/>
         <image name="live-feed-50" width="50" height="50"/>
         <image name="lung-cancer-cell-dividing-article.__v80030169" width="600" height="340"/>
+        <image name="p1_StopCancer_ML1702_ts467334264" width="600" height="454"/>
         <image name="personal-activity-50" width="50" height="50"/>
         <image name="placeholder_image" width="800" height="600"/>
         <image name="profile-50" width="50" height="50"/>
