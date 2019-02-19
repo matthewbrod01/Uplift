@@ -57,9 +57,9 @@ The screens below showcase what the app would look like if we had more time to c
 - [Firebase Newsfeed](https://www.youtube.com/watch?v=Aw5Hb_A_eFI&t=625s)
 
 ## Team
-- Yasin Ehsan, Queens College (Scrum Master/Project Manager)
-- Matthew Rodriguez, Baruch College (Back-end)
-- Helal Chowdhury, NYU (AI + Front-end) **First time working with iOS!**
-- Kevin Chen, NYU (Front-end) **First time working with iOS!**
-- Joseph Shimonov, Queens College (Front-end) **First time working with iOS!**
-- Ahmed Razin, NYU (Design UI/UX) **First time working with iOS!**
+- Scrum Master/Project Manager: **Yasin Ehsan**, Queens College
+- Back-End: **Matthew Rodriguez**, Baruch College
+- UI/UX Designer: **Ahmed Razin**, NYU (First time working with iOS!)
+- Front-End/AI: **Helal Chowdhury**, NYU (First time working with iOS!)
+- Front-End: **Kevin Chen**, NYU (First time working with iOS!)
+- Front-End: **Joseph Shimonov**, Queens College (First time working with iOS!)
