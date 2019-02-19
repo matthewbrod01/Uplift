@@ -6,6 +6,8 @@
 
 **Inspiration:** Nobody wants to die with regrets or alone.  We wanted to create a platform where people at risk-of-death can document and share their life stories to encourage, inspire, and **uplift** viewers. **Uplifters** get an avenue to leave an online footprint as well to influence younger people. **Viewers** get an opportunity to get invested in the lives of other people and get inspired. Overall, we wanted to boost the emotional health of all users by encouraging an interconnected support network.
 
+**Demo:** We demo-ed our app and presented to Facebook, Google, IBM, NYU judges and competed with 100+ team submissions.
+
 ## Video Walkthrough
 **Built With:** Swift, Xcode, Figma, Google Cloud Firebase, IBM Watson Assistant, Twilio
 
