@@ -9,7 +9,7 @@
 ## Video Walkthrough
 **Built With:** Swift, Xcode, Figma, Google Cloud Firebase, IBM Watson Assistant, Twilio
 
-**Features:** Real-time Database Feed, Chatbot
+**Features:** Real-time Database Feed, Voice Assistant for Accessibility, Sentiment Analysis for filtering negative comments
 
 The recording below showcases what we were able to accomplish in ~2 days at HackNYU:
 > ![GIF Recording](mySite.gif)
