@@ -1,12 +1,32 @@
 # *UpLift*
 
-**Objective** An iOS app which builds communities around the elderly, terminally ill, and war zone civilians by sharing stories to encourage, inspire and uplift others.
+**Objective:** An iOS app which builds a community centered around our elderly, terminally ill, at risk-of-death, or those battling with mental health. Built at HackNYU, Feb 2019.
+
+**Inspiration:** Nobody wants to die with regrets or alone.  We wanted to create a platform where people at risk-of-death can document and share their life stories to encourage, inspire, and **uplift** viewers. **Uplifters** get an avenue to leave an online footprint as well to influence younger people. **Viewers** get an opportunity to get invested in the lives of other people and get inspired. Overall, we wanted to boost the emotional health of all users by encouraging an interconnected support network.
+
+**Goal:** We wanted to build an app that best aligned with Facebook's motto: "Give people the power to build community and bring the world closer together."
+
+**Built With:** Swift, Xcode, Figma, Google Cloud Firebase, IBM Watson Assistant, Twilio
+
+**Features:** Real-time Database Feed, Chatbot
 
 ## Video Walkthrough
-The recording below showcases what we were able to accomplish in ~2 days at HackNYU
-> ![](mySite.gif)
+The recording below showcases what we were able to accomplish in ~2 days at HackNYU:
+> ![GIF Recording](mySite.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+<br />
+Youtube Demo:
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=x-xW1F-8Npk
+" target="_blank"><img src="http://img.youtube.com/vi/x-xW1F-8Npk/0.jpg" 
+alt="Youtube Demo" width="240" height="180" border="10" /></a>
+
+## UI Design
+The screens below showcase what the app would look like if we had more time to complete the app (future iterations)
+<img src="Home.png" width="300">
+<img src="Profile.png" width="300">
 
 ## Plan --> Prod
 ![](p3.gif)
@@ -36,7 +56,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Team
 - Matthew Rodriguez, Baruch College (Back-end)
-- Helal Chowdhury, NYU (AI + Front-end) **First iOS!**
-- Kevin Chen, NYU (Front-end) **First iOS!**
-- Joseph Shimonov, Queens College (Front-end) **First iOS!**
-- Ahmed Razin, NYU (Design UI/UX) **First iOS!**
+- Helal Chowdhury, NYU (AI + Front-end) **First time working with iOS!**
+- Kevin Chen, NYU (Front-end) **First time working with iOS!**
+- Joseph Shimonov, Queens College (Front-end) **First time working with iOS!**
+- Ahmed Razin, NYU (Design UI/UX) **First time working with iOS!**
