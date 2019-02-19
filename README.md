@@ -6,11 +6,11 @@
 
 **Goal:** We wanted to build an app that best aligned with Facebook's motto: "Give people the power to build community and bring the world closer together."
 
+## Video Walkthrough
 **Built With:** Swift, Xcode, Figma, Google Cloud Firebase, IBM Watson Assistant, Twilio
 
 **Features:** Real-time Database Feed, Chatbot
 
-## Video Walkthrough
 The recording below showcases what we were able to accomplish in ~2 days at HackNYU:
 > ![GIF Recording](mySite.gif)
 
